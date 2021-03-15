@@ -33,7 +33,6 @@ const moment = require('moment-timezone')
 const { exec } = require('child_process')
 const kagApi = require('@kagchi/kag-api')
 const fetch = require('node-fetch')
-const tiktod = require('tiktok-scraper')
 const { cekvip } = require('./src/cekvip')
 const { TobzApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const { VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
@@ -304,7 +303,7 @@ async function starts() {
 			const mod = [ownerNumber,"5598987851993@s.whatsapp.net"]//ubah nomor lo
 			const adminbotnumber = ["5598987851993@s.whatsapp.net"]//ubah nomor lo
 			const frendsowner = ["5598987851993@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5598987851993@s.whatsapp.net","5598987851993@s.whatsapp.net",5598991117925@s.whatsapp.net","5598991975781@s.whatsapp.net"] 
+			const premium = ["5598987851993@s.whatsapp.net","5598985851993@s.whatsapp.net"] 
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
